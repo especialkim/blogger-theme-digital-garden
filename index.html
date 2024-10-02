@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.3.3' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <title><data:view.title.escaped/></title>
+    <b:include data='blog' name='all-head-content'/>
+
+    // Lucide Icon Library
+    <script defer='defer' src='https://unpkg.com/lucide@latest'></script>
+
+    // MathJax Configuration
+    <script type='text/x-mathjax-config'>
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [[&#39;$&#39;, &#39;$&#39;]],
+          displayMath: [[&#39;$$&#39;, &#39;$$&#39;]],
+          // 정규 표현식을 사용하여 클래스 이름에 &#39;math&#39;가 포함된 모든 요소를 처리하도록 설정
+          processClass: /(^| )math( |$)/,
+          ignoreClass: &quot;no-math&quot;
+        }
+      });
+    </script>
+    <script async='async' src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML' type='text/javascript'></script>
+  </head>
+
+  <body>
+    <!-- 다음 클래스들은 현재 페이지의 유형에 따라 body에 추가됩니다 -->
+    <b:class cond='data:view.isHomepage' name='home-page'/>
+    <b:class cond='data:view.isPreview' name='preview'/>
+    <b:class cond='data:view.isSingleItem' name='item-view'/>
+    <b:class cond='data:view.isArchive' name='archive-view'/>
+    <b:class cond='data:view.isLabelSearch' name='label-view'/>
+    <b:class cond='data:view.isSearch and !data:view.isLabelSearch' name='search-view'/>
+
+
+    
+  </body>
+</html>

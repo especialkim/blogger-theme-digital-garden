@@ -1,0 +1,60 @@
+@charset "UTF-8"; /* 문자 인코딩 설정 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css");
+
+/* 
+  0. Reset 기본 스타일
+  1. 글로벌 변수 및 메크로
+  2. Typography 설정
+  3. 레이아웃 설정
+  4. 링크 스타일
+  5. 버튼 스타일
+  6. 배경 및 색상 설정
+  7. 테이블 스타일
+  8. 폼 요소 스타일
+  9. 애니메이션 및 전환 효과
+  10. Blogspot 테마 전용 스타일
+  11. 미디어 쿼리
+*/
+
+/* 0. Reset 기본 스타일 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit; /* 링크 색상 초기화 */
+  text-decoration: none; /* 기본 밑줄 제거 */
+}
+
+button {
+  all: unset; /* 버튼 기본 스타일 제거 */
+  display: inline-block;
+  cursor: pointer; /* 마우스 포인터를 버튼 모양으로 설정 */
+}
+
+/* 1. 글로벌 변수 */
+:root{
+    
+}
+
+/* 2. Typography 설정 */
+
+/* 3. 레이아웃 설정 */
+
+/* 4. 링크 스타일 */
+
+/* 5. 버튼 스타일 */
+
+/* 6. 배경 및 색상 설정 */
+
+/* 7. 테이블 스타일 */
+
+/* 8. 폼 요소 스타일 */
+
+/* 9. 애니메이션 및 전환 효과 */
+
+/* 10. Blogspot 테마 전용 스타일 */
+
+/* 11. 미디어 쿼리 */
