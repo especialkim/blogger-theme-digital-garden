@@ -40,6 +40,9 @@ button {
 }
 
 /* 2. Typography 설정 */
+body{
+  font-family: "Pretendard Variable", Pretendard;
+}
 
 /* 3. 레이아웃 설정 */
 

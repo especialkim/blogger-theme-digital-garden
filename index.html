@@ -6,22 +6,29 @@
     <title><data:view.title.escaped/></title>
     <b:include data='blog' name='all-head-content'/>
 
-    // Lucide Icon Library
-    <script defer='defer' src='https://unpkg.com/lucide@latest'></script>
+    <b:skin><![CDATA[
+    ]]></b:skin>
 
-    // MathJax Configuration
+    <b:template-skin>
+    </b:template-skin>
+
+    <link href='https://cdn.jsdelivr.net/gh/especialkim/blogger-theme-digital-garden@main/style.css' rel='stylesheet'/>
+    
+    <!-- Lucide Icon Library -->
+    <script defer='defer' src='https://unpkg.com/lucide@latest'/>
+
+    <!-- MathJax Configuration -->
     <script type='text/x-mathjax-config'>
       MathJax.Hub.Config({
         tex2jax: {
           inlineMath: [[&#39;$&#39;, &#39;$&#39;]],
           displayMath: [[&#39;$$&#39;, &#39;$$&#39;]],
-          // 정규 표현식을 사용하여 클래스 이름에 &#39;math&#39;가 포함된 모든 요소를 처리하도록 설정
           processClass: /(^| )math( |$)/,
           ignoreClass: &quot;no-math&quot;
         }
       });
     </script>
-    <script async='async' src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML' type='text/javascript'></script>
+    <script async='async' src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML' type='text/javascript'/>
   </head>
 
   <body>
@@ -33,7 +40,9 @@
     <b:class cond='data:view.isLabelSearch' name='label-view'/>
     <b:class cond='data:view.isSearch and !data:view.isLabelSearch' name='search-view'/>
 
-
+    <section>
+    	<b:section id='section'></b:section>
+    </section>
     
   </body>
 </html>
